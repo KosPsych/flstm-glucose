@@ -42,3 +42,24 @@ pip install -r requirements.txt
 
 ----------------
 ## Running
+If the preceding steps have been executed accurately, the code should be ready to run.
+
+### Option 1
+Open $n+1$ terminals where $n$ is the desired number of clients.
+Then start the server and each client with:
+
+```
+python3 src/server.py --n_clients=n
+python3 src/client.py --node-id=0
+python3 src/client.py --node-id=1
+...
+python3 src/client.py --node-id=n-1
+```
+The federated learning process will start and you will be able to see local training losses in the clients terminals and aggregated test set metrics for each federated round in the server's terminal.
+
+### Option 2
+For $n$ clients, run:
+```
+bash run.sh n
+```
+This will do the same thing with Option 1 without opening n+1 terminals and displaying all losses and metrics in the same terminal.

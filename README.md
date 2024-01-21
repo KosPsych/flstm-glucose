@@ -64,4 +64,4 @@ For $n$ clients, run:
 ```
 bash run.sh n
 ```
-This will do the same thing with Option 1 without opening $n+1$ terminals and displaying all losses and metrics in the same terminal.
+This will do the same thing with Option 1 without opening $n+1$ terminals while displaying all losses and metrics in the same terminal.

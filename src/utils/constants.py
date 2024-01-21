@@ -1,3 +1,3 @@
-MODEL_PATH = '/home/kostas/Desktop/projects/flstm-glucose/models/'
-DATA_PATH = '/home/kostas/Desktop/projects/flstm-glucose/data/'
+MODEL_PATH = '.../flstm-glucose/models/'
+DATA_PATH = '.../flstm-glucose/data/'
 

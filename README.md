@@ -27,7 +27,7 @@ flstm-glucose/src/..
                      2/..
                     ...
 ```
-
+### Step 4: Add models and data folder path to ```constants.py```
 ### Step 3: Create a virtual environment with Python version 3.10
 
 ```

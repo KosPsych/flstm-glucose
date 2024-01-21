@@ -27,14 +27,14 @@ flstm-glucose/src/..
                      2/..
                     ...
 ```
-### Step 4: Add models and data folder path to ```constants.py```
-### Step 3: Create a virtual environment with Python version 3.10
+### Step 3: Add models and data folder path to ```constants.py```
+### Step 4: Create a virtual environment with Python version 3.10
 
 ```
 conda create --name <name> python==3.10
 ```
 
-### Step 4: Install dependencies
+### Step 5: Install dependencies
 
 ```
 pip install -r requirements.txt

@@ -126,7 +126,8 @@ def preprocess_test(dataframes):
         # Sort the DataFrame based on the '5minute_intervals_timestamp' feature
         dataframes[i] = dataframes[i].sort_values(by='5minute_intervals_timestamp')
         
-     
+        # Apply outlier removal to the DataFrame
+        dataframes[i] = outlier_removal(dataframes[i])
         
         # Apply the first imputation to the DataFrame
         dataframes[i] = first_imputation(dataframes[i])

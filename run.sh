@@ -1,8 +1,5 @@
 #!/bin/bash
-# set -e
-# cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"/
-
-
+cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"/
 
 if [ "$#" -lt 1 ]; then
     echo "Usage: $0 n_clients"
@@ -11,11 +8,8 @@ fi
 
 n_clients=$1
 
-
 python src/server.py  --n_clients=$n_clients&
 sleep 10 
-
-
 
 ((n_clients = n_clients - 1))
 
